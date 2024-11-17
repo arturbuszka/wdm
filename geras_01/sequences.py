@@ -29,7 +29,7 @@ def get_initials_sequence():
         #  Litera B
         Step("move", {"steering": -100, "speed": 30, "rotations": 0.70}),
         # Drop magnet
-        motorC.on(0)
+        Step("magnet", {"power": 0}),
         Step("move", {"steering": 0, "speed": 30, "rotations": 1}),
         Step("move", {"steering": -100, "speed": 30, "rotations": 0.70}),
         Step("pen", {"state": "down"}),
